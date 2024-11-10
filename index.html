@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical analysis of visualisation models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .case {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .case-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            width: 48%;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .evaluation {
+            font-size: 1em;
+            color: #666;
+        }
+        .evaluation-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .chart-title {
+        font-size: 20px;
+        color: #4A90E2;
+        font-weight: bold;
+    }
+    .issue {
+        font-size: 16px;
+        color: #E94E77;
+        font-style: italic;
+    }
+    .improvement {
+        font-size: 16px;
+        color: #4CAF50;
+        font-style: italic;
+    }
+    </style>
+</head>
+<body>
+    <div class="case">
+        <div class="case-title">Case 1: Searched from the Web</div>
+        <div class="images">
+            <div class="image-container">
+                <img src="C:/Users/lenovo/Desktop/HCDIV/HCDIV-2/charts-2-02.png" alt="case1_image1">
+            </div>
+            <div class="image-container">
+                <img src="C:/Users/lenovo/Desktop/HCDIV/HCDIV-2/charts-3-01-wm.png" alt="case1_image2">
+            </div>
+            <div class="image-container">
+                <img src="C:/Users/lenovo/Desktop/HCDIV/HCDIV-2/charts-3-02-wm.png" alt="case1_image3">
+            </div>
+        </div>
+        <div class="evaluation">
+            <h3 class="chart-title">Chart 1</h3>
+            <p><span class="issue">Issues:</span> Lacks descriptive title, axis labels, and units; uses the same color for "Before" and "After."</p>
+            <p><span class="improvement">Improvements:</span> Add title, labels, and units; use different colors for each bar.</p>
+        </div>
+        <div class="evaluation">
+            <h3 class="chart-title">Chart 2</h3>
+            <p><span class="issue">Issues:</span> Error bars are unexplained; bars lack color variety; “Find bill from May 12” is highlighted without explanation; watermark may be distracting.</p>
+            <p><span class="improvement">Improvements:</span> Explain error bars; use varied colors; clarify emphasis on specific tasks; move or minimize watermark.</p>
+        </div>
+    </div>
+
+        <!-- Case 2 -->
+        <div class="case">
+            <div class="case-title">Case2: What I made before</div>
+            <div class="images">
+                <div class="image-container">
+                    <img src="C:\Users\lenovo\Desktop\HCDIV\HCDIV-2\QQ20241027-214540.png" alt="case2_image1" >
+
+                </div>
+                <div class="image-container">
+                    <img src="C:\Users\lenovo\Desktop\HCDIV\HCDIV-2\QQ20241027-214556.png" alt="case2_image2">
+
+                </div>
+                <div class="image-container">
+                    <img src="C:\Users\lenovo\Desktop\HCDIV\HCDIV-2\QQ20241027-214610.png" alt="case2_image3">
+
+                </div>
+                <div class="image-container">
+                    <img src="C:\Users\lenovo\Desktop\HCDIV\HCDIV-2\QQ20241027-214623.png" alt="case2_image4">
+
+                </div>
+                <div class="evaluation">
+                    <h3 class="chart-title">line graph</h3>
+                    <p><span class="issue">Issues:</span> The choice of chart type may not be optimal for comparing hospitals' data points, which do not form a continuous trend over time. A bar chart or stacked bar chart would be more suitable for this purpose. Furthermore, the information hierarchy is not well-established. </p>
+                    <p><span class="improvement">Improvements:</span> The chart design should be optimized by selecting a more appropriate chart type, using more distinct colors, and adding clear axis labels and a title. </p>
+                </div>
+                <div class="evaluation">
+                    <h3 class="chart-title">bar chart</h3>
+                    <p><span class="issue">Issues:</span> The chart aims to display the average length of hospital stay for different hospitals in the first quarter. However, it faces challenges in data accuracy and readability due to overlapping data and unclear correspondence. </p>
+                    <p><span class="improvement">Improvements:</span> The chart design also lacks clarity in information hierarchy and could benefit from optimizations such as clearer data labeling, enhanced contrast between bars, and better organization of text and numbers to improve readability and information delivery.</p>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>
